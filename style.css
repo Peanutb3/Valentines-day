@@ -1,0 +1,144 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#imageDisplay {
+    width: 260px;
+    height: 250px;
+    margin: 50px;
+}
+
+#responseButtons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s ease;
+}
+
+#yesButton {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#noButton {
+    background-color: #ccc;
+    color: black;
+}
+
+#yesButton:hover {
+    background-color: #ff1f4d;
+}
+
+#noButton:hover {
+    background-color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+/* View Message Button */
+#viewMessageButton {
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 22px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#viewMessageButton:hover {
+    background-color: #ff1f4d;
+}
+
+/* Background Gradient */
+.gradient-background {
+  background: rgb(255, 208, 229);
+  background: linear-gradient(180deg, rgba(255, 208, 229, 1) 0%, rgba(255, 232, 242, 1) 36%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* Bouncing Animation */
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Message Popup */
+#messagePopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.message-content h2 {
+    color: #bd1e59;
+    font-size: 24px;
+}
+
+.message-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#closeMessageButton {
+    background-color: #bd1e59;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+#closeMessageButton:hover {
+    background-color: #a11448;
+}
+
+
+/* Heart Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+    animation: float 2s ease-out;
+}
