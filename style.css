@@ -128,17 +128,3 @@ button {
 #closeMessageButton:hover {
     background-color: #a11448;
 }
-
-
-/* Heart Floating Animation */
-@keyframes float {
-    0% { transform: translateY(0) scale(1); opacity: 1; }
-    100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
-}
-
-.heart {
-    position: absolute;
-    color: red;
-    font-size: 24px;
-    animation: float 2s ease-out;
-}
